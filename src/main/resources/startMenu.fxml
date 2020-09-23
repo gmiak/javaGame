@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.SubScene?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mr.gmiak.dv.controller.StartMenu">
    <children>
       <VBox layoutX="100.0" layoutY="238.0" prefHeight="174.0" prefWidth="200.0" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="300.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Play">
+            <Button mnemonicParsing="false" onMouseClicked="#onClickedPlay" prefHeight="40.0" prefWidth="200.0" text="Play">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Options">
+            <Button mnemonicParsing="false" onMouseClicked="#onClickedOptions" prefHeight="40.0" prefWidth="200.0" text="Options">
                <VBox.margin>
                   <Insets bottom="25.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Exit" />
+            <Button mnemonicParsing="false" onMouseClicked="#onClickedExit" prefHeight="40.0" prefWidth="200.0" text="Exit" />
          </children>
       </VBox>
       <ImageView fitHeight="259.0" fitWidth="282.0" layoutX="71.0" layoutY="-58.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="499.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="670.0" AnchorPane.topAnchor="-58.0">
@@ -29,5 +31,10 @@
             <Image url="@logo1.png" />
          </image>
       </ImageView>
+      <SubScene fx:id="subSceneMenu" height="400.0" layoutX="1000.0" layoutY="287.0" width="600.0" AnchorPane.bottomAnchor="213.0" AnchorPane.topAnchor="200.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
    </children>
 </AnchorPane>
