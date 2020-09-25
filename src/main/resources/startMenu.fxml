@@ -34,9 +34,9 @@
       </ImageView>
       <AnchorPane fx:id="subSceneMenu" layoutX="1000.0" layoutY="287.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.topAnchor="200.0">
          <children>
-            <AnchorPane layoutX="50.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0">
+            <AnchorPane fx:id="breakoutGameSelect" layoutX="50.0" layoutY="150.0" onMouseClicked="#onSelectedBreakout" onMouseExited="#onExitedBreakout" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="50.0">
                <children>
-                  <ImageView fx:id="breakout" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#onMouseClickedGame" onMouseReleased="#onMouseReleasedGame" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+                  <ImageView fx:id="buttonBreakout" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
                      <image>
                         <Image url="@grey_button12.png" />
                      </image>
@@ -51,9 +51,9 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="350.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.rightAnchor="50.0">
+            <AnchorPane fx:id="spacerunnerGameSelect" layoutX="350.0" layoutY="150.0" onMouseClicked="#onSelectedSpacerunner" onMouseExited="#onExitedSpacerunner" prefHeight="200.0" prefWidth="200.0" AnchorPane.rightAnchor="50.0">
                <children>
-                  <ImageView fx:id="spacerunner" fitHeight="200.0" fitWidth="200.0" layoutX="350.0" onMouseClicked="#onMouseClickedGame" onMouseReleased="#onMouseReleasedGame" pickOnBounds="true" preserveRatio="true" style="" AnchorPane.rightAnchor="0.0">
+                  <ImageView fx:id="buttonSpacerunner" fitHeight="200.0" fitWidth="200.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true" style="" AnchorPane.rightAnchor="0.0">
                      <image>
                         <Image url="@grey_button12.png" />
                      </image>
